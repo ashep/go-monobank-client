@@ -1,2 +1,1 @@
-# go-monobank-client
-Go Monobank Client
+# Go Monobank Client
