@@ -1,12 +1,12 @@
 package monobank
 
 type CurrencyRate struct {
-	CurrencyA int     `json:"currencyCodeA"`
-	CurrencyB int     `json:"currencyCodeB"`
-	Date      int64   `json:"date"`
-	Sell      float64 `json:"rateSell"`
-	Buy       float64 `json:"rateBuy"`
-	Cross     float64 `json:"rateCross"`
+	CurrencyCodeA int     `json:"currencyCodeA"`
+	CurrencyCodeB int     `json:"currencyCodeB"`
+	Date          int64   `json:"date"`
+	RateSell      float64 `json:"rateSell"`
+	RateBuy       float64 `json:"rateBuy"`
+	RateCross     float64 `json:"rateCross"`
 }
 
 type Account struct {
@@ -22,12 +22,12 @@ type Account struct {
 }
 
 type JarInfo struct {
-	ID          string `json:"id"`
-	Title       string `json:"title"`
-	Description string `json:"description"`
-	Currency    int    `json:"currencyCode"`
-	Balance     int64  `json:"balance"`
-	Goal        int64  `json:"goal"`
+	ID           string `json:"id"`
+	Title        string `json:"title"`
+	Description  string `json:"description"`
+	CurrencyCode int    `json:"currencyCode"`
+	Balance      int64  `json:"balance"`
+	Goal         int64  `json:"goal"`
 }
 
 type Customer struct {
